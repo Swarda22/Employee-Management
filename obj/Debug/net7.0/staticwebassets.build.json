@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "zIm2+tnQTRC0scyFGF9yZRRTF38U0cpPH3rXpUdUWhA=",
+  "Source": "DemoApp1",
+  "BasePath": "_content/DemoApp1",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "DemoApp1/wwwroot",
+      "Source": "DemoApp1",
+      "ContentRoot": "/home/cdac/Project/UPDATED/DemoApp1/wwwroot/",
+      "BasePath": "_content/DemoApp1",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

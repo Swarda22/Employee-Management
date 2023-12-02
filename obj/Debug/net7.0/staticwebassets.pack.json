@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "/home/cdac/Project/UPDATED/DemoApp1/wwwroot/Index.html",
+      "PackagePath": "staticwebassets/Index.html"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.DemoApp1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.DemoApp1.props",
+      "PackagePath": "build\\DemoApp1.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.DemoApp1.props",
+      "PackagePath": "buildMultiTargeting\\DemoApp1.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.DemoApp1.props",
+      "PackagePath": "buildTransitive\\DemoApp1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,75 @@
+@model DemoApp1.Models.Department
+<html>
+    <head>
+        <title>Remove Department</title>
+        
+    </head>
+    <style>
+    h1 {
+        text-align: center;
+        color: #cc00c5; /* Adjusted text color */
+        font-size: 28px; /* Increased font size */
+        margin-top: 50px; /* Added more margin for better spacing */
+    }
+
+    h3 {
+    text-align: center;
+    color: #cc00c5; /* Adjusted text color */
+    font-size: 28px; /* Increased font size */
+    margin-top: 50px; /* Added more margin for better */
+    }
+    /* ... (existing styles) ... */
+
+    /* New styles for form elements */
+    input[type="text"] {
+        width: 40%;
+        padding: 8px;
+        margin: 5px auto;
+        display: block;
+        border: 2px solid #070606;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        background: linear-gradient(45deg, #8967d9, #9f64b9);
+        color: #fff;
+        padding: 10px 8px;
+        margin: 5px auto;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 20%;
+        transition: background 0.3s ease;
+        box-sizing: border-box;
+        display: block;
+    }
+
+    input[type="submit"]:hover {
+        background: linear-gradient(45deg, #cc0074, #6600ff);
+    }
+
+    label {
+        display: block; /* Display labels as block elements */
+        margin-top: 5px; /* Adjust margin between label and input */
+        text-align: center;
+    }
+
+
+    </style>
+    
+    <body>
+      
+        <h3>Remove Department </h3>
+       
+        <form method="post">
+            <label for="Id"><b>Department Id:</b></lable>
+            @Html.TextBoxFor(entry => entry.Id)<br>
+            <input type="submit" value="Remove"/><br><br>
+        </form>
+        
+        <p>
+            <i>@Html.ValidationMessageFor(entry => entry.Id)</i>
+        </p>
+    </body>
+</html>

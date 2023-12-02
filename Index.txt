@@ -1,0 +1,331 @@
+@model DemoApp1.Models.Admins
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Name</title>
+    <style>
+        body {
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 8px;
+        }
+
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .admin-login {
+            background: #fff;
+            padding: 10px;
+            border: 122px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+            top: 50px;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 520px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Company Name</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="Admins-login">
+        
+        <h2>Login</h2>
+            <i>@Html.ValidationMessageFor(entry => entry.Id)</i>
+        <form method="post">
+            <label for="username">Username:</label>
+            @Html.TextBoxFor(entry => entry.Id)
+            <label for="password">Password:</label>
+            @Html.PasswordFor(entry => entry.Password)
+            <button type="submit">Login</button>
+            </form>  
+        </div>
+    </div>
+
+    <!-- Your company content goes here -->
+
+</body>
+</html>
+===========================================================================================================
+
+@model DemoApp1.Models.Admins
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        body {
+     background: linear-gradient(45deg, #e7c4f4, #f6f3f8);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color:rgb(212, 148, 237);
+            color: #fff;
+            text-align: center;
+            padding: 8px;
+        }
+
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .admin-login {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+            top: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        form {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background: #333;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Company Name</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="admin-login">
+            <h2>Login</h2>
+            @Html.ValidationMessageFor(entry => entry.Id)
+            <form method="post">
+                <label for="username">Username:</label>
+                @Html.TextBoxFor(entry => entry.Id)
+                <label for="password">Password:</label>
+                @Html.PasswordFor(entry => entry.Password)
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+
+    <!-- Your company content goes here -->
+
+</body>
+
+</html>
+==============================================================================
+
+main code 
+
+@model DemoApp1.Models.Admins
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        body {
+     background: linear-gradient(45deg, #f8f6f8, #f6f3f8);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color:rgb(249, 244, 250);
+            color: rgb(204, 0, 197);
+            text-align: center;
+            padding: 8px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .admin-login {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+            top: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        form {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+             background: linear-gradient(45deg, #8967d9, #9f64b9);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background: linear-gradient(45deg, #cc0074, #6600ff);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Company Name</h1>
+    </header>
+
+
+    <div class="container">
+        <div class="admin-login">
+            <h2>Login</h2>
+            @Html.ValidationMessageFor(entry => entry.Id)
+            <form method="post">
+                <label for="username">Username:</label>
+                @Html.TextBoxFor(entry => entry.Id)
+                <label for="password">Password:</label>
+                @Html.PasswordFor(entry => entry.Password)
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+
+    <!-- Your company content goes here -->
+
+</body>
+
+</html>
